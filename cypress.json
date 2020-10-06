@@ -1,0 +1,6 @@
+{
+  "baseUrl": "http://belgst42dock01:3028/#/",
+  "testFiles": "**/*.feature",
+  "viewportWidth": 1920,
+  "viewportHeight": 1080
+}
