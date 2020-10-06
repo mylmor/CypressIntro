@@ -8,6 +8,7 @@ Feature: Click command
 
   Scenario: Click text
     Given I click on the click_text
+
   Scenario: DoubleClick button
     Given I double click on the double_click_button
 

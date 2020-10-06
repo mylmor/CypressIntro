@@ -1,5 +1,8 @@
 import {Given} from "cypress-cucumber-preprocessor/steps";
 
+
+const ClickOnMenuItem = (param) => cy.get(`[data-test-id=navigation_menu_${param}`).click();
+
 Given("I go to {string} menu", (menuButton) => {
     switch (menuButton.toUpperCase()) {
         case "GET" :
@@ -35,13 +38,8 @@ Given("I go to {string} menu", (menuButton) => {
         case "SHOULD":
             ClickOnMenuItem('should');
             break;
-
         default :
             cy.log("couldn't find menu button");
             break;
     }
 });
-
-function ClickOnMenuItem(param){
-    cy.get(`[data-test-id=navigation_menu_${param}`).click();
-}

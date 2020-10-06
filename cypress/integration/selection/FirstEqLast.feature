@@ -18,14 +18,17 @@ Feature: FirstEqLast command
   Scenario: Get the last Value
     Given I get the last Value
 
-  Scenario: Get the Value number "6"
-    Given I get the Value number "6"
+  Scenario Outline: Get the Value number <number>
+    Given I get the Value number <number>
 
-  Scenario: Get the Value number "3"
-    Given I get the Value number "3"
-
-  Scenario: Get the Value number "7"
-    Given I get the Value number "7"
-
-  Scenario: Get the Value number "9"
-    Given I get the Value number "9"
+    Examples:
+    | number |
+    | 1 |
+    | 2 |
+    | 3 |
+    | 4 |
+    | 5 |
+    | 6 |
+    | 7 |
+    | 8 |
+    | 9 |
